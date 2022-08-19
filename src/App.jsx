@@ -4,6 +4,8 @@ import Editor from './components/Editor.jsx';
 import  "./data";
 import Split from 'react-split';
 import { nanoid } from 'nanoid';
+// model.id = nanoid()
+
 
 export default function App() {
     const [notes, setNotes] = React.useState(
