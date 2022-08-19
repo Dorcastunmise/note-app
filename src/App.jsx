@@ -4,8 +4,6 @@ import Editor from './components/Editor.jsx';
 import  "./data";
 import Split from 'react-split';
 import { nanoid } from 'nanoid';
-// model.id = nanoid()
-
 
 export default function App() {
     const [notes, setNotes] = React.useState(
@@ -20,10 +18,7 @@ export default function App() {
     }, [notes])
     
     function createNewNote() {
-        const newNote = {
-            id: {nanoid},
-            body: "# Type your markdown note's title here"
-        }
+        const newNote = { id: nanoid, body: `Type your markdown note's title here`}
         setNotes(prevNotes => [newNote, ...prevNotes])
         setCurrentNoteId(newNote.id)
     }
