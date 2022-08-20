@@ -2,7 +2,7 @@ import React from "react";
 import ReactMde from "react-mde";
 import Showdown from "showdown";
 
-function Editor({ currentNote, updateNote }) {
+export default function Editor({currentNote, updateNote}) {
     const [selectedTab, setSelectedTab] = React.useState("write")
 
     const converter = new Showdown.Converter({
@@ -20,13 +20,10 @@ function Editor({ currentNote, updateNote }) {
                 selectedTab={selectedTab}
                 onTabChange={setSelectedTab}
                 generateMarkdownPreview={(markdown) =>
-                    Promise.resolve(converter.makeHtml(markdown))
-                }
+                Promise.resolve(converter.makeHtml(markdown))}
                 minEditorHeight={80}
                 heightUnits="vh"
             />
         </section>
     )
 }
-
-export default Editor
