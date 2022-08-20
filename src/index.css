@@ -27,6 +27,7 @@ button:focus {
   height: 100vh;
 }
 
+
 .sidebar--header {
   display: flex;
   justify-content: space-around;
@@ -39,7 +40,7 @@ button:focus {
 
 .new-note {
   cursor: pointer;
-  background-color: #4A4E74;
+  background-color: rgb(199, 103, 92);
   border: none;
   color: white;
   border-radius: 3px;
@@ -49,7 +50,7 @@ button:focus {
 
 .first-note {
   cursor: pointer;
-  background-color: #4A4E74;
+  background-color: rgb(199, 103, 92);
   border: none;
   color: white;
   border-radius: 3px;
