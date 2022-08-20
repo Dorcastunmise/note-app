@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar";
 import Editor from "./components/Editor";
 import "./data";
 import Split from "react-split";
-import { v4 as uuidv4 } from 'uuid';
+import { nanoid } from 'nanoid';
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
     
     function createNewNote() {
         const newNote = {
-            id: uuidv4(),
+            id: console.log(nanoid()),
             body: "# Type your markdown note's title here"
         }
         setNotes(prevNotes => [newNote, ...prevNotes])
