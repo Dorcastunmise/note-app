@@ -20,7 +20,7 @@ function App() {
     
     function createNewNote() {
         const newNote = {
-            id: console.log(nanoid()),
+            id: nanoid(),
             body: "# Type your markdown note's title here"
         }
         setNotes(prevNotes => [newNote, ...prevNotes])
