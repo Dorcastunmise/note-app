@@ -1,7 +1,7 @@
 import React from "react";
 import Sidebar from "./components/Sidebar";
 import Editor from "./components/Editor";
-import "./data";
+// import "./data";
 import Split from "react-split";
 import {nanoid} from "nanoid";
 
