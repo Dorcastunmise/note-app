@@ -69,6 +69,7 @@ export default function App() {
                     setCurrentNoteId={setCurrentNoteId}
                     newNote={createNewNote}
                     deleteNote={deleteNote}
+                    key={notes.id}
                 />
                 {
                     currentNoteId && 

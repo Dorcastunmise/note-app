@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@uiw/react-md-editor": "^3.18.1",
     "nanoid": "^3.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
