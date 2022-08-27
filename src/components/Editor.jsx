@@ -1,5 +1,5 @@
 import React from "react";
-import ReactMde from "react-mde";
+import MDEditor from "@uiw/react-md-editor";
 import Showdown from "showdown";
 
 export default function Editor({ currentNote, updateNote }) {
@@ -14,7 +14,7 @@ export default function Editor({ currentNote, updateNote }) {
 
     return (
         <section className="pane editor">
-            <ReactMde
+            <MDEditor
                 value={currentNote.body}
                 onChange={updateNote}
                 selectedTab={selectedTab}
